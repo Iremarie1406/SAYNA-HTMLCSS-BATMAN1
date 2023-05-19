@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --yellow-color: #FFFF00;
+--yellow-light: #F8F184;
+--blue-light: #19587D;
+--red-color: #B11313;
+--white-color: #FFFFFF;
+--white-right: #C4C4C4;
+--black-right: #0D0E09;
+--black-color: #000000;
+--gradient-white: #eae6e2;
+--gradient-red: #89000960;
+--gradient-blue: #91adbb49;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Rajdhani';
+    font-size: 35px;
+    font-weight: 400;
+
+}
+button{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.contenair{
+    width: 80%;
+    margin: 0 auto;
+
+   
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Space+Grotesk';
+    font-weight: 300;
+}
+/*designe de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+ul{
+    list-style: none;
+
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'radjhani';
+
+}
+nav ul a:hover{
+    color: var(--yellow-color);
+
+}
+
+
+
+/*designe partie hero*/
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 156px;
+}
+#hero .text {
+    margin: 20px 0;
+
+}
+#hero .title{
+    margin: 30px 0;
+}
+
+.btn{text-decoration: none;
+color: var(--white-color);
+margin-top: 10px;
+font-size: 20px;
+padding: 6px 20px;
+background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
+box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#hero .fleche{
+ display: block;
+ margin: 0 auto;
+ margin-top: 240px;
+ 
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    top: 230px
+    
+}
+.scroll .social{
+    margin-top: 15px;
+}
+/*mise en forme des personnages Batman*/
+#batmancine, #justice-league, #nemesis, #allies{
+    margin-top: 40px;
+}
+.personnage{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#batmancine .description, #justice-league .description, #nemesis .description, #allies .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+}
+
+#batmancine .title, #nemesis .title, #allies .title, #justice-ligue .title{
+    margin: 30px 0;
+}
+#batmancine .personnage-info, #nemesis .personnage-info, #allies .personnage-info{
+    text-align: center;}
+
+/*partie multimédia*/
+#multimedia button{
+position: relative;
+top: 155px;
+background: none;
+border: none;
+}
+#multimedia button.right{
+    right:-85%;
+}
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+#multimedia .slider-image{
+    width: 100%;
+}
+ .slider-content{
+    padding: 15px;
+    background-color: #4a4c4e;
+    text-align: justify;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#multimedia p{
+    font-size: 14px;
+}
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+/*partie formulaire*/
+#contact{
+    background-color:var(--gradient-blue) ;
+    padding: 70px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contact .title{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(199, 193, 193);
+    background-color: transparent;
+    padding: 5px 0;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+    margin: -10px auto;
+}
+#contact .news{
+    margin: 15px 0;
+    margin-bottom: 2px solid rgb(199, 193, 193);
+}
+.btn-group{
+    padding: 10px;
+    display: block;
+    justify-content: space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    -o-border-image:linear-gradient(69deg, red, blue)1;
+    border-image:linear-gradient(69deg, white, blue)1;
+    font-size: 15px;
+}
+.form input[type=submit]{
+    display: block;
+    width: 200px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background-image: linear-gradient(60deg,rgb(137, 132, 132), rgb(82, 34, 34));
+}
+/*partie citation*/
+#citation{
+    margin: 90px;
+}
+ .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.citation-auteur{
+    padding-top: 30px;
+    font-size: 10px;
+}
+.gllm-close{
+    float:right;
+}
+/*designe footer*/
+footer{
+    margin-top: 160px;
+}
+.text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+.social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+.social-item{
+    padding: 10px;
+}
